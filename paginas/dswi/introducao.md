@@ -7,6 +7,7 @@ permalink: /dswi/introducao
 # Introdução
 
 ## HTML
+---
 
 
 - O HTML (**H**yper **T**ext **M**arkup **L**anguage - Linguagem de Marcação de Hipertexto) é a linguagem base da internet. Foi criada para ser de fácil entendimento por seres humanos e também por máquinas.
@@ -25,6 +26,23 @@ permalink: /dswi/introducao
 
 <br/>
 
-<center>
-  <img src="/paginas/img/estrutura_html.png" alt="drawing" width="400"/>
-</center>
+<div align="center">
+  <img src="/paginas/img/estrutura_html.png" width="800px"/>
+</div>
+
+
+#### Estrutura Básica - Tags
+
+```html
+<html> e </html>
+```
+
+- **Definição**: Tag utilizada pelo navegador para identificar que o documento em questão trata-se de um HTML e não de texto puro. Entre `<html>` e `</html>` devem estar todas as outras tags, as informações e todo o conteúdo.
+
+- **Atributos**: não possui.
+
+<br/>
+
+```html
+<head> e </head>
+```
