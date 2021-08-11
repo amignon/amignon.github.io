@@ -1,0 +1,44 @@
+<header class="site-header">
+  <div class="wrapper">
+    {% assign navurl = page.url | remove: 'index.html' %}
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title }} - {{ site.author | escape }}</a>
+
+    {%- if titles_size > 0 -%}
+      <nav class="site-nav">
+
+        <!--
+        <div class="trigger">
+          <a class="page-link" href="/">Inicio</a>
+          {%- for path in page_paths -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- if my_page.title -%}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      -->
+        <div class="trigger">
+          {% for item in include.nav %}
+            {% if item.subitems %}
+              <div class="dropdown">
+                <button class="dropbtn">{{ item.text }}
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  {% for sub in item.subitems %}
+                  <a href="{{ sub.url | relative_url }}">{{ sub.text | escape }}</a>
+                  {%- endfor -%}
+                </div>
+              </div>
+            {%- else -%}
+              <a class="page-link" href="{{ item.url | relative_url }}">{{ item.text | escape }}</a>
+          {% endif %}
+          {%- endfor -%}
+        </div>
+      </nav>
+    {%- endif -%}
+  </div>
+</header>
