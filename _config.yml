@@ -30,7 +30,7 @@ url: https://amignon.github.io # the base hostname & protocol for your site, e.g
 twitter_username: 
 github_username:  amignon
 domain: amignon.github.io
-markdown: GFM
+markdown: kramdown
 
 # Build settings
 theme: minima

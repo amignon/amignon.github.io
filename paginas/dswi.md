@@ -6,6 +6,13 @@ permalink: /dswi/
 
 ### **Parte Prática**
 
- <span style="font-size:25px; padding-left: 40px;">[Introdução](/dswi/introducao)</span>
+ <span style="font-size:25px; padding-left: 15px;">[HTML](/dswi/html)</span>
 
 ### **Ferramentas**
+
+- Notepad
+- Notepad++
+- Sublime
+- Visual Studio Code
+- [Codepen](https://codepen.io/) (Online) 
+
