@@ -4,11 +4,20 @@ title: Desenvolvimento de Software para Internet
 permalink: /dswi/html
 ---
 
-
-
 # **HTML**
 ---
 
+### **Sumário**
+
+- [Estrutura Básica de um HTML](#estrutura-basica)
+- [Links](#link)
+- [Imagens](#imagens)
+- [Outros Comandos](#outros-comandos)
+- [Listas](#listas)
+- [Tabelas](#tabelas)
+- [Exercícios](#exercicios)
+
+---
 
 - O HTML (**H**yper **T**ext **M**arkup **L**anguage - Linguagem de Marcação de Hipertexto) é a linguagem base da internet. Foi criada para ser de fácil entendimento por seres humanos e também por máquinas.
 
@@ -22,7 +31,7 @@ permalink: /dswi/html
   <h1>Aula de Desenvolvimento de Software para Internet</h1>
   ```
 
-### **Estrutura Básica de um HTML**
+### **Estrutura Básica de um HTML** {#estrutura-basica}
 
 <br/>
 
@@ -30,8 +39,20 @@ permalink: /dswi/html
   <img src="/paginas/img/estrutura_html.png" width="800px"/>
 </div>
 
+<br/>
+
+- **Dica**: use sempre **minúsculas** nas Tags.
+
 
 #### **Estrutura Básica - Tags**
+
+```html
+<!DOCTYPE html>
+```
+- A declaração `<!DOCTYPE html>` deve ser a primeira coisa em seu documento HTML, antes mesmo da tag `<html>`.
+- O `<!DOCTYPE html>` não é uma tag HTML, é uma instrução para o navegador web sobre como interpretar o documento.
+
+<br/>
 
 ```html
 <html> e </html>
@@ -50,6 +71,15 @@ permalink: /dswi/html
 - **Definição**: início e o fim do cabeçalho do documento, onde devem ser inseridas outras tags com dados e informações que não são exibidos na tela do navegador, mas utilizados por ele para fins diversos.
 
 - **Atributos**: não possui.
+
+<br/>
+
+```html
+<meta>
+```
+
+- A tag `<meta>`é um comando implementado no código de páginas wbe, dentro da área `<head>`, para passar instruções a programas externos e também para o navegador.
+- Exemplo: `<meta charset="UTF-8" />`, informa ao navegador a codificação de caracteres que deve ser utilizada. 
 
 <br/>
 
@@ -98,9 +128,10 @@ permalink: /dswi/html
 
 <center>exemplo01.html</center>
 ```html
+<!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
   <head>
+    <meta charset="utf-8" />
     <title>Minha Página</title>
   </head>
   <body>
@@ -112,9 +143,10 @@ permalink: /dswi/html
 
 <center>exemplo02.html</center>
 ```html
+<!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
   <head>
+    <meta charset="utf-8" />
     <title>Segunda Página</title>
   </head>
   <body>
@@ -125,7 +157,7 @@ permalink: /dswi/html
 </html>
 ```
 
-#### **Link**
+#### **Links** {#link}
 
 - Atributo *href=* define um link.
 - O código abaixo aponta para um site
@@ -150,7 +182,7 @@ permalink: /dswi/html
 
 - Isto é feito para econimizar tráfego de rede. Para contornar isto, abrir a página com `Ctrl+F5`.
 
-#### **Imagens**
+#### **Imagens** {#imagens}
 
 ```html
 <img src="arquivo.jpg" width="100" height="200">
@@ -164,7 +196,7 @@ permalink: /dswi/html
   - `src`: endereço da imagem.
   - `alt`: texto alternativo se a figura da imagem não for carregada.
 
-#### **Outro Comandos**
+#### **Outros Comandos** {#outros-comandos}
 
 - Break (nova linha)
   
@@ -174,7 +206,7 @@ permalink: /dswi/html
 
   `<hr>`: apresenta uma linha horizontal.
 
-#### **Listas**
+#### **Listas** {#listas}
 
 - Listas Não Ordenadas
 
@@ -261,14 +293,86 @@ permalink: /dswi/html
 
   <br/>
 
-  [Exercício](#teste)
+  [Exercício](#exercicio01)
+
+#### **Tabelas** {#tabelas}
+
+- Tags:
+
+  | Tags           | Descrição |
+  | --------       | --------- |
+  | `<table>`      | define uma tabela. |
+  | `<th>`         | define o cabeçalho de uma tabela. |
+  | `<tr>`         | define a linha de uma tabela. |
+  | `<td>`         | define uma célula de uma tabela. |
+  | `<caption>`    | define a captura de uma tabela. |
+  | `<colgroup>`   | define um grupo de colunas de uma tabela. |
+  | `<col>`        | atribui valores a uma tabela |
+  | `<thead>`      | define o cabeçalho de uma tabela. |
+  | `<tbody>`      | define o corpo de uma tabela. |
+  | `<tfoot>`      | define o rodapé de uma tabela. |
+
+- Exemplo:
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+    </head>
+    <body>
+      <table width="100%" border="1">
+        <caption><b>Livros</b></caption>
+        <tr>
+          <th>ISBN</th>
+          <th>Título</th>
+          <th>Preço</th>
+        </tr>
+        <tr>
+          <td>3476896</td>
+          <td>Livro de HTML</td>
+          <td>R$ 53,00</td>
+        </tr>
+        <tr>
+          <td>2489604</td>
+          <td>Livro de CSS</td>
+          <td>R$ 47,50</td>
+        </tr>
+      </table>
+    </body>
+  </html>
+  ```
+
+  Resultado:
+
+  <table width="100%" border="1">
+    <caption><b>Livros</b></caption>
+    <tr>
+      <th>ISBN</th>
+      <th>Título</th>
+      <th>Preço</th>
+    </tr>
+    <tr>
+      <td>3476896</td>
+      <td>Livro de HTML</td>
+      <td>R$ 53,00</td>
+    </tr>
+    <tr>
+      <td>2489604</td>
+      <td>Livro de CSS</td>
+      <td>R$ 47,50</td>
+    </tr>
+  </table>
+
+  [Exercício](#exercicio02)
 
 
 
-## Exercícios
+## Exercícios {#exercicios}
 ---
 
-1. Criar uma lista com a relação de disciplinas que vocês estão fazendo no momento. <a name="teste"></a>
+1. Criar uma lista com a relação de disciplinas que vocês estão fazendo no momento. <a name="exercicio01"></a>
+2. Criar uma tabela com o RA e o Nome dos integrantes do seu grupo de PIM. <a name="exercicio02"></a>
 
 
 ## Resolução
@@ -277,9 +381,10 @@ permalink: /dswi/html
 Exercício 1
 
 ```html
+<!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
   <head>
+    <meta charset="utf-8" />
     <title>Exercício 1</title>
   </head>
   <body>
@@ -296,3 +401,36 @@ Exercício 1
   </body>
 </html>
 ```
+
+Exercício 2
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <table width="100%" border="1">
+      <caption><b>Grupo do PIM</b></caption>
+      <tr>
+        <th>RA</th>
+        <th>Nome</th>
+      </tr>
+      <tr>
+        <td>1234</td>
+        <td>Ana</td>
+      </tr>
+      <tr>
+        <td>3456</td>
+        <td>João</td>
+      </tr>
+      <tr>
+        <td>7865</td>
+        <td>Matheus</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
