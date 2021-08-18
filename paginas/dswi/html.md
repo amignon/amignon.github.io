@@ -78,7 +78,7 @@ permalink: /dswi/html
 <meta>
 ```
 
-- A tag `<meta>`é um comando implementado no código de páginas wbe, dentro da área `<head>`, para passar instruções a programas externos e também para o navegador.
+- A tag `<meta>`é um comando implementado no código de páginas web, dentro da área `<head>`, para passar instruções a programas externos e também para o navegador.
 - Exemplo: `<meta charset="UTF-8" />`, informa ao navegador a codificação de caracteres que deve ser utilizada. 
 
 <br/>

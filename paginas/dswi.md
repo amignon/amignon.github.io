@@ -17,3 +17,7 @@ permalink: /dswi/
 - [Replit](https://replit.com/) (Online)
 - [Codepen](https://codepen.io/) (Online) 
 
+### **Referências**
+
+- [W3 Schools - HTML](https://www.w3schools.com/html/)
+
