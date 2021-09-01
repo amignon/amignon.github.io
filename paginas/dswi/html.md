@@ -260,7 +260,16 @@ permalink: /dswi/html
     </ol>
   </div>
 
+  <br>
+
   - Pode-se utilizar diferentes tipos de marcadores com as listas ordenadas, como:  `type="a"`, `type="I"` ou `type="i"`.
+
+  ```html
+  <ol type="a">
+    <li> Primeiro tópico</li>
+    <li> Segundo tópico</li>
+  </ol>
+  ```
 
   <br/>
 
