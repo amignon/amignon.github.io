@@ -15,7 +15,10 @@ permalink: /dswi/html
 - [Outros Comandos](#outros-comandos)
 - [Listas](#listas)
 - [Tabelas](#tabelas)
+- [Formatações Gerais](#formatacoes)
+- [Alinhamento](#alinhamento)
 - [Exercícios](#exercicios)
+
 
 ---
 
@@ -258,12 +261,12 @@ permalink: /dswi/html
 
   <br/>
 
-- Listas de Definiões
+- Listas de Definições
 
   - **Não** é uma lista de itens.
   - É uma lista de termos e explicações dos termos.
   - `<dl>`: Estabelece a definição de uma lista.
-  - `<dl>`: Define um termo na definição de uma lista.
+  - `<dt>`: Define um termo na definição de uma lista.
   - `<dd>`: Estabelece a descrição de um termo em uma lista de definição.
   - Exemplo:
 
@@ -366,14 +369,147 @@ permalink: /dswi/html
 
   [Exercício](#exercicio02)
 
+#### **Formatações Gerais - Exemplo** {#formatacoes}
 
+  - Exemplo 01: 
+
+  ```html
+  <html>
+    <meta charset="utf-8">
+    <head>
+      <title>Trabalhando com Formatações de Texto</title>
+    </head>
+    <body>
+      <h2>Formatações Gerais</h2>
+      <hr/>
+      Negrito: <b>texto</b><br>
+      Itálico: <i>texto</i><br>
+      Sublinhado: <u>texto</u><br>
+      Riscado: <s>texto</s><br>
+      Superior: <sup>texto</sup><br>
+      Inferior: <sub>texto</sub><br>
+      Amarelo:  <mark>texto</mark><br>
+      Pequeno: <small>texto</small><br>
+      Grande: <big>texto</big><br>
+    </body>
+  </html>
+  ```
+
+  - Resultado: 
+
+  <div style="background-color: white; color: black; margin: 30px">
+    <h2>Formatações Gerais</h2>
+    <hr/>
+    Negrito: <b>texto</b><br>
+    Itálico: <i>texto</i><br>
+    Sublinhado: <u>texto</u><br>
+    Riscado: <s>texto</s><br>
+    Superior: <sup>texto</sup><br>
+    Inferior: <sub>texto</sub><br>
+    Amarelo:  <mark>texto</mark><br>
+    Pequeno: <small>texto</small><br>
+    Grande: <big>texto</big><br>
+  </div>
+
+  - Exemplo 02:
+
+  ```html
+  <html>
+  <meta charset="utf-8">
+  <head>
+    <title>Trabalhando com Formatações de Texto</title>
+  </head>
+    <body>
+      <font color="blue" size="30" face="terminal"><p>oi</p>
+      <font color="black" size="30" face="teen"><p>oi</p>
+      <font color="red" size="3" face="tahoma"><p>oi</p>
+      <font color="orange" size="3" face="symbol"><p>oi</p>
+      <font color="green" size="13" face="pupcat"><p>oi</p>
+      <font color="EE11AA" size="23" face="impact"><p>oi</p> 
+      <font color="FF9600" size="3" face="arial"><p>oi</p>
+    </body>
+  </html> 
+  ```
+
+  - Resultado:
+
+  <div style="background-color: white; color: black; margin: 30px">
+    <font color="blue" size="30" face="terminal"><p>oi</p></font>
+    <font color="black" size="30" face="teen"><p>oi</p></font>
+    <font color="red" size="3" face="tahoma"><p>oi</p></font>
+    <font color="orange" size="3" face="symbol"><p>oi</p></font>
+    <font color="green" size="13" face="pupcat"><p>oi</p></font>
+    <font color="EE11AA" size="23" face="impact"><p>oi</p> </font>
+    <font color="FF9600" size="3" face="arial"><p>oi</p></font>
+  </div>
+
+
+#### **Alinhamento**  {#alinhamento}
+
+  - Para deixar um texto centralizado, alinhado à esquerda ou à direita, utiliza-se os seguintes comandos:
+
+  ```html
+  <center>centraliza texto</center>
+  <p align="center">centraliza texto</p>
+  <p align="left">texto a esquerda</p>
+  <p align="right">texto a direita</p>
+  <p align="justify">texto justificado</p>
+  ```
+
+  - O atributo `align` necessita vir acompanhado de um comando principal que pode ser: `<p>`, `<br>`, `<hn>` e `<div>`.
+
+  ```html
+  <div align="right">texto a direita</div>
+  ```
 
 ## Exercícios {#exercicios}
 ---
 
-1. Criar uma lista com a relação de disciplinas que vocês estão fazendo no momento. <a name="exercicio01"></a>
-2. Criar uma tabela com o RA e o Nome dos integrantes do seu grupo de PIM. <a name="exercicio02"></a>
+<div>
+  <ol>
+    <li>Criar uma lista com a relação de disciplinas que vocês estão fazendo no momento. <a name="exercicio01"></a></li>
+    <li>Criar uma tabela com o RA e o Nome dos integrantes do seu grupo de PIM. <a name="exercicio02"></a></li>
+    <li>Criar uma página HTML para representar um currículo, conforme o layout abaixo:</li>
+      <br/>
+      <div align="center">
+        <img src="/paginas/img/html_exercicio03.png" width="800px"/>
+      </div>
+      <br/>
+      <div style="margin-left: 20px;">
+        <ul>
+          <li>O Título do Navegador deve ser: <em>Currículo</em>;</li>
+          <li>Usar a META TAG obrigatória de Codificação de Caracter (CHARSET);</li>
+          <li>Reproduzir o Layout acima, usando Cabeçalhos, Linhas Horizontais, Listas e Parágrafos:</li>
+          <li>Substituir e preencher as informações apresentadas de acordo com trajetória de cada aluno.</li>
+        </ul>
+      </div>
+      <li>Criar uma página HTML e deixá-la com o seguinte layout. 
+        <ol type="a">
+          <li>O cabeçalho <em>Desenvolvimento de Sistemas</em> deve  ter tamanho 30, ficar centralizado, cor black, fonte arial.</li>
+          <li>Após o cabeçalho incluir uma linha horizontal.</li>
+          <li>O texto <em>Cursos de Graduação da UNIP</em> deve ser fonte Arial, tamanho 20 e cor Azul.</li>
+          <li>O texto <em>Cursos de Pós-Graduação</em> deve ser Negrito, fonte Arial, tamanho 20 e cor Verde.</li>
+          <li>O texto <em>Mestrado</em> deve ser Itálico, fonte Arial, tamanho 20 e cor Laranja.</li>
+          <li>O texto Doutorado deve ser Sublinhado, fonte Arial, tamanho 20 e cor Vermelha.</li>
+        </ol>
+      </li>
+      <div style="background-color: white; color: black; margin: 30px">
+        <font size="30" color="black" face="arial"><p align="center">Desenvolvimento de Sistemas</p></font>
+        <hr>
+        <font size="20" color="blue" face="arial">Cursos de Graduação da UNIP</font><br>
+        <font size="20" color="green" face="arial"><b>Cursos de Pós-Graduação</b></font><br>
+        <font size="20" color="orange" face="arial"><em>Mestrado</em></font><br>
+        <font size="20" color="red" face="arial"><u>Doutorado</u></font><br>
+      </div>
+  </ol>
+</div>
 
+  
+
+
+
+  
+  
 
 ## Resolução
 ---
@@ -397,7 +533,7 @@ Exercício 1
       <li>Programação Orientada a Objetos II</li>
       <li>Projeto de Sistemas Orientados a Objetos</li>
       <li>Tópicos Especiais de Orientação a Objetos</li>
-  </ul>
+    </ul>
   </body>
 </html>
 ```
@@ -433,4 +569,3 @@ Exercício 2
   </body>
 </html>
 ```
-
