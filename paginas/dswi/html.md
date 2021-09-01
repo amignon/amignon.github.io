@@ -234,6 +234,7 @@ permalink: /dswi/html
     </ul>
   </div>
 
+
   <br/>
 
 - Listas Ordenadas
@@ -258,6 +259,8 @@ permalink: /dswi/html
       <li>Leite</li>
     </ol>
   </div>
+
+  - Pode-se utilizar diferentes tipos de marcadores com as listas ordenadas, como:  `type="a"`, `type="I"` ou `type="i"`.
 
   <br/>
 
