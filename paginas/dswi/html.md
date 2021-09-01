@@ -650,3 +650,33 @@ Exercício 4
   </body>
 </html>
 ```
+
+Exercício 5
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercício 05 -Tabelas</title>
+  </head>
+  <body>
+    <table border="1">
+      <caption>Professores</caption>
+      <tr>
+        <th colspan="3">Dados</th>
+      </tr>
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Idade</th>
+      </tr>
+      <tr>
+        <td>Alexandre</td>
+        <td>Mignon</td>
+        <td>40 anos</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
