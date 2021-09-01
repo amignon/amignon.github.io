@@ -432,13 +432,13 @@ permalink: /dswi/html
     <title>Trabalhando com Formatações de Texto</title>
   </head>
     <body>
-      <font color="blue" size="30" face="terminal"><p>oi</p>
-      <font color="black" size="30" face="teen"><p>oi</p>
-      <font color="red" size="3" face="tahoma"><p>oi</p>
-      <font color="orange" size="3" face="symbol"><p>oi</p>
-      <font color="green" size="13" face="pupcat"><p>oi</p>
-      <font color="EE11AA" size="23" face="impact"><p>oi</p> 
-      <font color="FF9600" size="3" face="arial"><p>oi</p>
+    <font color="blue" size="30" face="terminal"><p>oi</p></font>
+    <font color="black" size="30" face="teen"><p>oi</p></font>
+    <font color="red" size="3" face="tahoma"><p>oi</p></font>
+    <font color="orange" size="3" face="symbol"><p>oi</p></font>
+    <font color="green" size="13" face="pupcat"><p>oi</p></font>
+    <font color="EE11AA" size="23" face="impact"><p>oi</p> </font>
+    <font color="FF9600" size="3" face="arial"><p>oi</p></font>
     </body>
   </html> 
   ```
@@ -502,7 +502,7 @@ permalink: /dswi/html
           <li>O texto <em>Cursos de Graduação da UNIP</em> deve ser fonte Arial, tamanho 20 e cor Azul.</li>
           <li>O texto <em>Cursos de Pós-Graduação</em> deve ser Negrito, fonte Arial, tamanho 20 e cor Verde.</li>
           <li>O texto <em>Mestrado</em> deve ser Itálico, fonte Arial, tamanho 20 e cor Laranja.</li>
-          <li>O texto Doutorado deve ser Sublinhado, fonte Arial, tamanho 20 e cor Vermelha.</li>
+          <li>O texto <em>Doutorado</em> deve ser Sublinhado, fonte Arial, tamanho 20 e cor Vermelha.</li>
         </ol>
       </li>
       <div style="background-color: white; color: black; margin: 30px">
@@ -513,7 +513,11 @@ permalink: /dswi/html
         <font size="20" color="orange" face="arial"><em>Mestrado</em></font><br>
         <font size="20" color="red" face="arial"><u>Doutorado</u></font><br>
       </div>
-      <li>Criar uma tabela com os seus dados, de acordo com o exemplo abaixo</li>
+      <li>Criar uma tabela com os seus dados, de acordo com o exemplo abaixo.</li>
+      <br>
+      <div align="center">
+        <img src="/paginas/img/html_exercicio05.png"/>
+      </div>
   </ol>
 </div>
   
@@ -582,8 +586,8 @@ Exercício 3
 ```html
 <!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
   <head>
+    <meta charset="utf-8">
     <title>Currículo</title>
   </head>
   <body>
@@ -623,6 +627,26 @@ Exercício 3
         </ol>
       </li>
     </ul>
+  </body>
+</html>
+```
+
+Exercício 4
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercício 04</title>
+  </head>
+  <body>
+    <font size="30" color="black" face="arial"><p align="center">Desenvolvimento de Sistemas</p></font>
+    <hr>
+    <font size="20" color="blue" face="arial">Cursos de Graduação da UNIP</font><br>
+    <font size="20" color="green" face="arial"><b>Cursos de Pós-Graduação</b></font><br>
+    <font size="20" color="orange" face="arial"><em>Mestrado</em></font><br>
+    <font size="20" color="red" face="arial"><u>Doutorado</u></font><br>
   </body>
 </html>
 ```
