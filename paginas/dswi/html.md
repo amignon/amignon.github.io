@@ -513,14 +513,9 @@ permalink: /dswi/html
         <font size="20" color="orange" face="arial"><em>Mestrado</em></font><br>
         <font size="20" color="red" face="arial"><u>Doutorado</u></font><br>
       </div>
+      <li>Criar uma tabela com os seus dados, de acordo com o exemplo abaixo</li>
   </ol>
 </div>
-
-  
-
-
-
-  
   
 
 ## Resolução
@@ -578,6 +573,56 @@ Exercício 2
         <td>Matheus</td>
       </tr>
     </table>
+  </body>
+</html>
+```
+
+Exercício 3
+
+```html
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <head>
+    <title>Currículo</title>
+  </head>
+  <body>
+    <h1>Nome do Aluno</h1>
+    <hr/>
+    <h3>Dados Pessoais</h3>
+    <hr/>
+    <ul>
+      <li>Endereço: </li>
+      <li>Email: </li>
+      <li>Telefone: </li>
+      <li>Estado Civil: </li>
+      <li>Nacionalidade: </li>
+    </ul>
+    <hr/>
+    <h3>Objetivos</h3>
+    <p>Posição profissional na área de informática como (Técnico em Informática, Analista de Sistemas, Programador, etc.) com ênfase em (Suporte, Redes, Internet, Manutenção, Projeto, etc)</p>
+    <hr/>
+    <h3>Formação</h3>
+    <ol>
+      <li>Ensino Técnico em Informática na ETEC ... - Conclusão em ...</li>
+      <li>Ensino Médio na Escola ... - Conclusão em ...</li>
+      <li>Ensino Fundamental na Escola ... - Conclusão em ...</li>
+    </ol>
+    <hr/>
+    <h3>Cursos</h3>
+    <ul>
+      <li> 2011
+        <ol type="a">
+          <li>Curso de Idiomas / Inglês - Nível Básico -  Em andamento</li>
+          <li>Curso de Violão - Nível Intermediário - Em andamento</li>
+        </ol>
+      </li>
+      <li> 2010
+        <ol type="a">
+          <li>Curso de Office (Word e Excel) / Nível Avançado - Concluídos</li>
+        </ol>
+      </li>
+    </ul>
   </body>
 </html>
 ```
