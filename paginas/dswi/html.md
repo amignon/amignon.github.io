@@ -631,12 +631,12 @@ Os elementos de um formulário são:
     <input type="radio" name="rb" value="M" checked>Masculino<br>
     <input type="radio" name="rb" value="F">Feminino<br>
     Quais linguagens de programação você conhece?<br>
-    <input type="checkbox" name="cb" value="c">C<br>
-    <input type="checkbox" name="cb" value="csharp">C#<br>
-    <input type="checkbox" name="cb" value="java">Java<br>
-    <input type="checkbox" name="cb" value="js">JavaScript<br>
-    <input type="checkbox" name="cb" value="python">Python<br>
-    <input type="checkbox" name="cb" value="ruby">Ruby<br>
+    <input type="checkbox" name="cb1" value="c">C<br>
+    <input type="checkbox" name="cb2" value="csharp">C#<br>
+    <input type="checkbox" name="cb3" value="java">Java<br>
+    <input type="checkbox" name="cb4" value="js">JavaScript<br>
+    <input type="checkbox" name="cb5" value="python">Python<br>
+    <input type="checkbox" name="cb6" value="ruby">Ruby<br>
     </form>
   </div>
   <br>
@@ -805,6 +805,36 @@ Os elementos de um formulário são:
           Digite sua cidade natal: <input type="text" name="cidade" size="40"><br>
           Digite sua senha: <input type="password" name="senha" size="15">
         </form>
+      </div>
+    </li>
+    <li>Criar um formulário em HTML conforme o layout abaixo:
+      <div style="background-color: white; color: black; margin: 30px">
+        <h1 align="center">Cadastro</h1>
+        <form>
+          <fieldset>
+            Nome: <input type="text" name="nome" size="30" maxlength="50"><br><br>
+            CPF: <input type="text" name="cpf" size="15" maxlength="14"><br><br>
+            Sexo: <input type="radio" name="sexo" value="F">Feminino
+            <input type="radio" name="sexo" value="M">Masculino<br><br>
+            Escolaridade: 
+            <select name="escolaridade" size="1">
+              <option>Primeiro Grau</option>
+              <option>Segundo Grau</option>
+              <option>Técnico</option>
+              <option>Superior</option>
+              <option>Pós-Graduação</option>
+            </select>
+            <br><br>
+            Senha: <input type="password" name="senha" size="10" maxlength="10"><br><br>
+            Enviar foto: <input type="file" name="foto"><br><br>
+            Aceito os termos do site: <input type="checkbox" name="aceito"><br><br>
+            Envie um comentário:<br>
+            <textarea name="Comentários" rows="4" cols="50"></textarea>
+          </fieldset>
+          <br>
+          <input type="reset" name="limpar">
+          <input type="submit" name="Enviar" action="http://url_do_servidor">
+        </form>      
       </div>
     </li>
   </ol>
