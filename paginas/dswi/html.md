@@ -969,3 +969,24 @@ Exercício 5
   </body>
 </html>
 ```
+
+Exercício 6
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercício 06</title>
+  </head>
+  <body>
+    <h1>Formulário da UNIP</h1>
+    <form>
+      Digite seu nome: <input type="text" name="nome" size="40"><br>
+      Digite sua idade: <input type="text" name="idade" size="2" maxlength="2"><br>
+      Digite sua cidade natal: <input type="text" name="cidade" size="40"><br>
+      Digite sua senha: <input type="password" name="senha" size="15">
+    </form>
+  </body>
+</html>
+```
