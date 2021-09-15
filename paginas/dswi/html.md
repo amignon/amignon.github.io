@@ -17,6 +17,7 @@ permalink: /dswi/html
 - [Tabelas](#tabelas)
 - [Formatações Gerais](#formatacoes)
 - [Alinhamento](#alinhamento)
+- [Formulários](#formularios)
 - [Exercícios](#exercicios)
 
 
@@ -474,6 +475,282 @@ permalink: /dswi/html
   <div align="right">texto a direita</div>
   ```
 
+#### **Formulários**  {#formularios}
+
+Para criarmos um formulário a estrutura deve ficar entre as tags `<form>` ... `</form>`.
+
+Os elementos de um formulário são: 
+
+   - `<input>...</input>`: esta tag especifica uma entrada de daods feita pelo usuário. Existem alguns atributos que definem o tipo de entrada efetuada.
+
+      <b>Observação</b>: a tag `input` não é obrigatório ser fechado.
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-lboi{border-color:inherit;text-align:left;vertical-align:middle}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7btt">Atributo</th>
+    <th class="tg-7btt">Valor</th>
+    <th class="tg-7btt">Descrição</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-lboi" rowspan="7"><span style="font-weight:bold">type</span></td>
+    <td class="tg-0pky">text</td>
+    <td class="tg-0pky">define uma área de inserção de caracteres.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">password</td>
+    <td class="tg-0pky">define uma área de inserção de caracteres mas exibe *.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">checkbox</td>
+    <td class="tg-0pky">entrada de dados <span style="font-style:italic">sim/não.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">radio</td>
+    <td class="tg-0pky">exibe várias opções mas só aceita uma.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">submit</td>
+    <td class="tg-0pky">botão para envio de dados.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">reset</td>
+    <td class="tg-0lax">botão para apagar os campos do formulário.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">hidden</td>
+    <td class="tg-0lax">campo invisível que é enviado junto com os outros.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:bold">name</span></td>
+    <td class="tg-0lax">variável</td>
+    <td class="tg-0lax">define o nome da variável que receberá o conteúdo do campo.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:bold">value</span></td>
+    <td class="tg-0lax">opção</td>
+    <td class="tg-0lax">valor padrão do campo quando não informado.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:bold">size</span></td>
+    <td class="tg-0lax">n</td>
+    <td class="tg-0lax">tamanho do visual campo (texto ou password).</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:bold">maxlength</span></td>
+    <td class="tg-0lax">n</td>
+    <td class="tg-0lax">tamanho do campo em quantidade de caracteres (text ou password).</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:bold">checked</span></td>
+    <td class="tg-0lax">sem valor</td>
+    <td class="tg-0lax">permite deixar uma opção Radio ou Checkbox inicial escolhida.</td>
+  </tr>
+</tbody>
+</table>
+
+  - Exemplo
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exemplo Formulário 01</title>
+    </head>
+    <body>
+      <h1>Formulário da UNIP</h1>
+      <form>
+        Digite seu nome: <input type="text" name="nome" size="40"><br>
+        Digite sua idade: <input type="text" name="idade" size="2" maxlength="2">
+      </form>
+    </body>
+  </html>
+  ```
+
+  <div align="center"><b>Resultado</b></div>
+
+  <div style="background-color: white; color: black; margin: 20px">
+    <h1>Formulário da UNIP</h1>
+      <form>
+        Digite seu nome: <input type="text" name="nome" size="40"><br>
+        Digite sua idade: <input type="text" name="idade" size="2" maxlength="2">
+      </form>
+  </div>
+  <br/>
+
+  - Checkbox e Radio
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exemplo Formulário 02</title>
+    </head>
+    <body>
+      <h1>Formulário da UNIP</h1>
+      <form>
+        Digite seu nome: <input type="text" name="nome" size="40"><br>
+        Digite sua idade: <input type="text" name="idade" size="2" maxlength="2"><br>
+        Sexo:<br>
+        <input type="radio" name="rb" value="M" checked>Masculino<br>
+        <input type="radio" name="rb" value="F">Feminino<br>
+        Quais linguagens de programação você conhece?<br>
+        <input type="checkbox" name="cb" value="c">C<br>
+        <input type="checkbox" name="cb" value="csharp">C#<br>
+        <input type="checkbox" name="cb" value="java">Java<br>
+        <input type="checkbox" name="cb" value="js">JavaScript<br>
+        <input type="checkbox" name="cb" value="python">Python<br>
+        <input type="checkbox" name="cb" value="ruby">Ruby<br>
+      </form>
+    </body>
+  </html>
+  ```
+
+  <div align="center"><b>Resultado</b></div>
+  <div style="background-color: white; color: black; margin: 20px;">
+    <h1>Formulário da UNIP</h1>
+    <form>
+    Digite seu nome: <input type="text" name="nome" size="40"><br>
+    Digite sua idade: <input type="text" name="idade" size="2" maxlength="2"><br>
+    Sexo:<br>
+    <input type="radio" name="rb" value="M" checked>Masculino<br>
+    <input type="radio" name="rb" value="F">Feminino<br>
+    Quais linguagens de programação você conhece?<br>
+    <input type="checkbox" name="cb" value="c">C<br>
+    <input type="checkbox" name="cb" value="csharp">C#<br>
+    <input type="checkbox" name="cb" value="java">Java<br>
+    <input type="checkbox" name="cb" value="js">JavaScript<br>
+    <input type="checkbox" name="cb" value="python">Python<br>
+    <input type="checkbox" name="cb" value="ruby">Ruby<br>
+    </form>
+  </div>
+  <br>
+
+  - **Select**
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exemplo Formulário Select</title>
+    </head>
+    <body>
+      <h1>Formulário da UNIP</h1>
+      <form>
+        Selecione um curso:
+        <select name="curso">
+          <option selected>Tec. em Análise e Desenvolvimento de Sistemas</option>
+          <option>Tec.em Redes de Computadores</option>
+          <option>Tec. em Jogos Digitais</option>
+        </select>
+      </form>
+    </body>
+  </html>
+  ```
+
+  <div align="center"><b>Resultado</b></div>
+  <div style="background-color: white; color: black; margin: 20px;">
+    <h1>Formulário da UNIP</h1>
+    <form>
+    Selecione um curso:
+    <select name="curso">
+      <option selected>Tec. em Análise e Desenvolvimento de Sistemas</option>
+      <option>Tec.em Redes de Computadores</option>
+      <option>Tec. em Jogos Digitais</option>
+      </select>
+    </form> 
+  </div>
+
+  - **TextArea e Bordas**
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exemplo Formulário Select</title>
+    </head>
+    <body>
+      <h1>Formulário da UNIP</h1>
+      <form>
+        <fieldset><legend>Dados do Usuário</legend>
+        Digite seu nome: <input type="text" name="nome" size="40"><br>
+        Digite sua idade: <input type="text" name="idade" size="2" maxlength="2"><br>
+        </fieldset>
+        <br>
+        Comentários<br>
+        <textarea name="comentarios" cols="35" rows="3"></textarea>
+      </form>
+    </body>
+  </html>
+  ```
+
+  <div align="center"><b>Resultado</b></div>
+  <div style="background-color: white; color: black; margin: 20px;">
+    <h1>Formulário da UNIP</h1>
+    <form>
+      <fieldset><legend>Dados do Usuário</legend>
+      Digite seu nome: <input type="text" name="nome" size="40"><br>
+      Digite sua idade: <input type="text" name="idade" size="2" maxlength="2"><br>
+      </fieldset>
+      <br>
+      Comentários<br>
+      <textarea name="comentarios" cols="35" rows="3"></textarea>
+    </form>
+  </div>
+
+  - **Botões** 
+
+    - **sumbit**: envia dados ao servidor confome o método indicado na tag `<form>`.
+
+      - `<form method="post">`: envia os dados imediatamente após a URL do servidor.
+      - `<form method="get">`: anexa os dados do formulário ao endereço do servidor
+      
+      <br>
+    
+    - **reset**: limpa os dados do formulário, restaurando os valores originais. 
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exemplo Formulário Select</title>
+    </head>
+    <body>
+      <h1>Formulário da UNIP</h1>
+      <form method="get">
+        Clique para enviar: <input type="submit" name="Enviar" action="http://url_do_servidor"><br>
+        Clique para limpar: <input type="reset" name="limpar">
+      </form>
+    </body>
+  </html>
+  ```
+  <div align="center"><b>Resultado</b></div>
+  <div style="background-color: white; color: black; margin: 20px;">
+    <h1>Formulário da UNIP</h1>
+    <form method="get">
+      Clique para enviar: <input type="submit" name="Enviar" action="http://url_do_servidor"><br>
+      Clique para limpar: <input type="reset" name="limpar">
+    </form>
+  </div>
+
 ## Exercícios {#exercicios}
 ---
 
@@ -513,11 +790,23 @@ permalink: /dswi/html
         <font size="20" color="orange" face="arial"><em>Mestrado</em></font><br>
         <font size="20" color="red" face="arial"><u>Doutorado</u></font><br>
       </div>
-      <li>Criar uma tabela com os seus dados, de acordo com o exemplo abaixo.</li>
-      <br>
-      <div align="center">
-        <img src="/paginas/img/html_exercicio05.png"/>
+    <li>Criar uma tabela com os seus dados, de acordo com o exemplo abaixo.</li>
+    <br>
+    <div align="center">
+      <img src="/paginas/img/html_exercicio05.png"/>
+    </div>
+    <br>
+    <li>Criar um formulário em HTML conforme o layout abaixo:
+      <div style="background-color: white; color: black; margin: 30px">
+        <h1>Formulário da UNIP</h1>
+        <form>
+          Digite seu nome: <input type="text" name="nome" size="40"><br>
+          Digite sua idade: <input type="text" name="idade" size="2" maxlength="2"><br>
+          Digite sua cidade natal: <input type="text" name="cidade" size="40"><br>
+          Digite sua senha: <input type="password" name="senha" size="15">
+        </form>
       </div>
+    </li>
   </ol>
 </div>
   
