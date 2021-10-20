@@ -1032,7 +1032,7 @@ Exercício 7
   </head>
   <body>
     <h1 align="center">Cadastro</h1>
-    <form>
+    <form method="get">
       <fieldset>
         Nome: <input type="text" name="nome" size="30" maxlength="50"><br><br>
         CPF: <input type="text" name="cpf" size="15" maxlength="14"><br><br>
